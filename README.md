@@ -7,6 +7,17 @@ The work has two parts:
 - **Stage 2.1** scrapes the metadata (title, abstract, subjects and so on) of every Research Commons record. An LLM labels each record as **Māori-related** (`maori_origin`) or **not Māori-related** (`non_maori_origin`). The labels are then used to train and compare cheaper classifiers: TF-IDF baselines, [EmbeddingGemma](https://huggingface.co/google/embeddinggemma-300M) and a LoRA fine-tuned Gemma-3-4B. The labels are also checked against other LLM providers.
 - **Stage 2.2** takes the records labelled `maori_origin`, downloads the full text of each paper, and extracts quoted evidence of whether and how the paper contains Māori data.
 
+## Related repositories
+
+This repository is part of the University of Waikato Māori Data Findability Project. The project is split into stages, and each stage has its own repository:
+
+| Stage | Repository | Source |
+|---|---|---|
+| Stage 1 | [maori-data-stage1-hansard](https://github.com/dinushiTJ/maori-data-stage1-hansard) | New Zealand Parliament debates (Hansard) |
+| Stage 2 | [maori-data-stage2-research-commons](https://github.com/dinushiTJ/maori-data-stage2-research-commons) (this repository) | University of Waikato Research Commons |
+
+Stage 2 reuses the Stage 1 approach (LLM labelling followed by a fine-tuned EmbeddingGemma classifier) and the same `maori_origin` / `non_maori_origin` labels. It then adds baselines, Gemma-3-4B fine-tuning, checks against other LLM providers and full-text evidence extraction.
+
 ## Notebooks
 
 Each stage has a `notebooks/` folder. Notebooks are numbered in the order they should be run (`NN_` is a step and `NN.M_` is a sub-step). Most were written for Google Colab. The `08.1` and `08.3` notebooks were written for Kaggle.
