@@ -1,0 +1,26 @@
+# Not for GitHub: private docs, papers, slides, deprecated notebooks
+removed_items/
+
+# Datasets are too large for GitHub (100 MB file limit)
+**/data/
+
+# OS / editor / Python
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+.env
+
+# Secrets / credentials (never commit)
+.env.*
+*.pem
+*.key
+credentials*.json
+*service_account*.json
+client_secret*.json
+kaggle.json
+.huggingface/
+token*.txt
+
+# Claude Code notes (local only)
+CLAUDE.md
+.claude/
