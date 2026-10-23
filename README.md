@@ -1,5 +1,16 @@
 # Māori Data Identification in University of Waikato Research Commons (Stage 2)
 
+[![Hugging Face datasets](https://img.shields.io/badge/Hugging%20Face-Datasets-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/collections/dinushiTJ/mdf-research-commons-datasets)
+[![Stage 1 repository](https://img.shields.io/badge/GitHub-Stage%201-181717?logo=github&logoColor=white)](https://github.com/dinushiTJ/maori-data-stage1-hansard)
+[![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebooks-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Notebooks-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/)
+![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-Labelling-8E75B2?logo=googlegemini&logoColor=white)
+[![EmbeddingGemma](https://img.shields.io/badge/Model-EmbeddingGemma-4285F4?logo=google&logoColor=white)](https://huggingface.co/google/embeddinggemma-300M)
+![Gemma 3 4B](https://img.shields.io/badge/Model-Gemma--3--4B%20LoRA-4285F4?logo=google&logoColor=white)
+[![Source: Research Commons](https://img.shields.io/badge/Source-Research%20Commons-BE0F34)](https://researchcommons.waikato.ac.nz/)
+
 Research code for finding and classifying Māori data in the [University of Waikato Research Commons](https://researchcommons.waikato.ac.nz/), the university's open-access repository of theses and research papers.
 
 The work has two parts:
@@ -55,6 +66,8 @@ The notebooks read API keys from Colab Secrets or Kaggle Secrets. Depending on t
 ## Data
 
 The datasets are too large to include in this repository. Each stage expects its local data in a `data/` folder, which git ignores. Notebook 01 scrapes the records again, and the later notebooks read the labelled datasets from the Hugging Face Hub (`dinushiTJ/nz_research_commons_*`).
+
+The published datasets are in the [MDF Research Commons Datasets](https://huggingface.co/collections/dinushiTJ/mdf-research-commons-datasets) collection on the Hugging Face Hub.
 
 ## Acknowledgements
 
