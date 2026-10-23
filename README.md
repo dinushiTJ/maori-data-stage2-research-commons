@@ -69,6 +69,16 @@ The datasets are too large to include in this repository. Each stage expects its
 
 The published datasets are in the [MDF Research Commons Datasets](https://huggingface.co/collections/dinushiTJ/mdf-research-commons-datasets) collection on the Hugging Face Hub.
 
+## Authors
+
+All authors are at the School of Computing and Mathematical Sciences, University of Waikato, Hamilton, New Zealand.
+
+| Name | Email | ORCID |
+|---|---|---|
+| Dinushi Jayasinghe | [dinushi.jayasinghe@waikato.ac.nz](mailto:dinushi.jayasinghe@waikato.ac.nz) | [![ORCID](https://img.shields.io/badge/ORCID-0009--0005--6042--9137-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0005-6042-9137) |
+| Paul T. Brown | [paul.brown@waikato.ac.nz](mailto:paul.brown@waikato.ac.nz) | [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--7501--3971-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0001-7501-3971) |
+| Nick Lim | [nick.lim@waikato.ac.nz](mailto:nick.lim@waikato.ac.nz) | [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--4690--5780-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0003-4690-5780) |
+
 ## Acknowledgements
 
 The records and papers come from [Research Commons](https://researchcommons.waikato.ac.nz/), the institutional repository of the University of Waikato. Copyright in each item stays with its authors or rights holders. Check the licence on each item before reusing its content.
