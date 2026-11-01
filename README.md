@@ -16,7 +16,7 @@ Research code for finding and classifying Māori data in the [University of Waik
 The work has two parts:
 
 - **Stage 2.1** scrapes the metadata (title, abstract, subjects and so on) of every Research Commons record. An LLM labels each record as **Māori-related** (`maori_origin`) or **not Māori-related** (`non_maori_origin`). The labels are then used to train and compare cheaper classifiers: TF-IDF baselines, [EmbeddingGemma](https://huggingface.co/google/embeddinggemma-300M) and a LoRA fine-tuned Gemma-3-4B. The labels are also checked against other LLM providers.
-- **Stage 2.2** takes the records labelled `maori_origin`, downloads the full text of each paper, and extracts quoted evidence of whether and how the paper contains Māori data.
+- **Stage 2.2** *(in progress)* takes the records labelled `maori_origin`, downloads the full text of each paper, and extracts quoted evidence of whether and how the paper contains Māori data.
 
 ## Related repositories
 
@@ -31,7 +31,7 @@ Stage 2 reuses the Stage 1 approach (LLM labelling followed by a fine-tuned Embe
 
 ## Notebooks
 
-Each stage has a `notebooks/` folder. Notebooks are numbered in the order they should be run (`NN_` is a step and `NN.M_` is a sub-step). Most were written for Google Colab. The `08.1` and `08.3` notebooks were written for Kaggle.
+Each stage has its own `notebooks/` folder. Notebooks are numbered in the order they should be run (`NN_` is a step and `NN.M_` is a sub-step). Most were written for Google Colab. The `08.1` and `08.3` notebooks were written for Kaggle.
 
 ### Stage 2.1: Classification (`stage2.1_research_commons/notebooks/`)
 
@@ -46,11 +46,9 @@ Each stage has a `notebooks/` folder. Notebooks are numbered in the order they s
 | `09.1`–`09.7` | Checks the Gemini labels against Llama (Groq), OpenAI GPT-5.4-mini and GPT-OSS |
 | `10_paper_charts` | Figures for the paper |
 
-### Stage 2.2: Evidence extraction (`stage2.2_evidence_extraction/notebooks/`)
+### Stage 2.2: Evidence extraction
 
-| Notebook | What it does |
-|---|---|
-| `01_maori_data_evidence_extraction` | Downloads the full text of `maori_origin` papers, extracts evidence with Gemini, checks every quote against the source text and saves a Māori-data inventory |
+> **Work in progress.** Stage 2.2 is still under active development. Its notebooks will be added to this repository when they are ready.
 
 ## Running
 

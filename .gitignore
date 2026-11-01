@@ -24,3 +24,6 @@ token*.txt
 # Claude Code notes (local only)
 CLAUDE.md
 .claude/
+
+# Stage 2.2 is in progress: notebooks stay local until ready
+stage2.2_evidence_extraction/
