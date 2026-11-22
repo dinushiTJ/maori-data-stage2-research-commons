@@ -11,6 +11,30 @@
 ![Gemma 3 4B](https://img.shields.io/badge/Model-Gemma--3--4B%20LoRA-4285F4?logo=google&logoColor=white)
 [![Source: Research Commons](https://img.shields.io/badge/Source-Research%20Commons-BE0F34)](https://researchcommons.waikato.ac.nz/)
 
+## AIRA 2026 poster: Beyond Keywords
+
+**Fine-Tuned Language Models for Māori-Relevant Research Metadata Classification**: 5th Annual AIRA Conference, Ōtepoti Dunedin, 23–24 November 2026. [📄 Poster (PDF)](poster/poster_AIRA2026.pdf)
+
+A keyword-based model (TF-IDF) missed 136 of the 367 Māori-relevant records in the held-out test set. Fine-tuned language models found 321 to 331 of them.
+
+Results on the same 3,318-record held-out test set (367 Māori-relevant). All metrics measure agreement with the Gemini reference labels.
+
+| Model | Macro F1 | Found (of 367) | False positives | Notebook |
+|---|---|---|---|---|
+| TF-IDF logistic regression | 0.8721 | 231 | 4 | `06.1` |
+| EmbeddingGemma-300M, zero-shot | 0.6708 | 291 | 592 | `07.2` |
+| EmbeddingGemma-300M, triplet fine-tuned | 0.9265 | 331 | 63 | `07.8` |
+| Gemma-3-4B, zero-shot | 0.7459 | 358 | 498 | `08.2` |
+| **Gemma-3-4B, LoRA fine-tuned** | **0.9343** | 321 | 39 | `08.4` |
+
+Label consistency check: GPT-OSS-120B agreed with Gemini on 90.17% of a balanced 1,200-record sample (κ = 0.8033), notebook `09.7`.
+
+> **Caveat.** The reference labels are machine-generated (mostly Gemini-2.5-Flash), not Māori or domain-expert annotation. Use these models to surface candidate Māori-relevant records for human review, not to make authoritative judgements about Māori identity, provenance, cultural status, or governance.
+
+Data and fine-tuned models are on [Hugging Face](https://huggingface.co/collections/dinushiTJ/mdf-research-commons-datasets). The poster covers Stage 2.1 only.
+
+## About this repository
+
 Research code for finding and classifying Māori data in the [University of Waikato Research Commons](https://researchcommons.waikato.ac.nz/), the university's open-access repository of theses and research papers.
 
 The work has two parts:
@@ -76,6 +100,19 @@ All authors are at the School of Computing and Mathematical Sciences, University
 | Dinushi Jayasinghe | [dinushi.jayasinghe@waikato.ac.nz](mailto:dinushi.jayasinghe@waikato.ac.nz) | [![ORCID](https://img.shields.io/badge/ORCID-0009--0005--6042--9137-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0005-6042-9137) |
 | Paul T. Brown | [paul.brown@waikato.ac.nz](mailto:paul.brown@waikato.ac.nz) | [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--7501--3971-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0001-7501-3971) |
 | Nick Lim | [nick.lim@waikato.ac.nz](mailto:nick.lim@waikato.ac.nz) | [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--4690--5780-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0003-4690-5780) |
+
+## Citation
+
+```bibtex
+@misc{jayasinghe2026beyondkeywords,
+  author       = {Jayasinghe, Dinushi and Brown, Paul T. and Lim, Nick},
+  title        = {Beyond Keywords: Fine-Tuned Language Models for M{\=a}ori-Relevant Research Metadata Classification},
+  howpublished = {Poster, 5th Annual Artificial Intelligence Researchers Association Conference (AIRA 2026), Dunedin, New Zealand},
+  year         = {2026},
+  month        = nov,
+  url          = {https://github.com/dinushiTJ/maori-data-stage2-research-commons}
+}
+```
 
 ## Acknowledgements
 
