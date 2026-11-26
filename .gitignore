@@ -27,3 +27,6 @@ CLAUDE.md
 
 # Stage 2.2 is in progress: notebooks stay local until ready
 stage2.2_evidence_extraction/
+
+# Paper chart notebook is private: keep local only
+stage2.1_research_commons/notebooks/10_paper_charts.ipynb

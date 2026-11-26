@@ -68,7 +68,6 @@ Each stage has its own `notebooks/` folder. Notebooks are numbered in the order 
 | `07.1`–`07.8` | EmbeddingGemma zero-shot and fine-tuned models (`07.8` retrains without test leakage) |
 | `08.1`–`08.4` | Gemma-3-4B base and LoRA fine-tuned inference and evaluation |
 | `09.1`–`09.7` | Checks the Gemini labels against Llama (Groq), OpenAI GPT-5.4-mini and GPT-OSS |
-| `10_paper_charts` | Figures for the paper |
 
 ### Stage 2.2: Evidence extraction
 
