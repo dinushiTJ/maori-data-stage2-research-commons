@@ -1,15 +1,15 @@
 # Māori Data Identification in University of Waikato Research Commons (Stage 2)
 
-[![Hugging Face datasets](https://img.shields.io/badge/Hugging%20Face-Datasets-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/collections/dinushiTJ/mdf-research-commons-datasets)
-[![Stage 1 repository](https://img.shields.io/badge/GitHub-Stage%201-181717?logo=github&logoColor=white)](https://github.com/dinushiTJ/maori-data-stage1-hansard)
-[![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebooks-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/)
-[![Kaggle](https://img.shields.io/badge/Kaggle-Notebooks-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/)
-![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini-Labelling-8E75B2?logo=googlegemini&logoColor=white)
-[![EmbeddingGemma](https://img.shields.io/badge/Model-EmbeddingGemma-4285F4?logo=google&logoColor=white)](https://huggingface.co/google/embeddinggemma-300M)
-![Gemma 3 4B](https://img.shields.io/badge/Model-Gemma--3--4B%20LoRA-4285F4?logo=google&logoColor=white)
-[![Source: Research Commons](https://img.shields.io/badge/Source-Research%20Commons-BE0F34)](https://researchcommons.waikato.ac.nz/)
+[![Hugging Face datasets](assets/badges/hugging-face-datasets-ffd21e.svg)](https://huggingface.co/collections/dinushiTJ/mdf-research-commons-datasets)
+[![Stage 1 repository](assets/badges/github-stage-1-181717.svg)](https://github.com/dinushiTJ/maori-data-stage1-hansard)
+[![Google Colab](assets/badges/google-colab-notebooks-f9ab00.svg)](https://colab.research.google.com/)
+[![Kaggle](assets/badges/kaggle-notebooks-20beff.svg)](https://www.kaggle.com/)
+![Python](assets/badges/python-3-3776ab.svg)
+![Jupyter](assets/badges/jupyter-notebooks-f37626.svg)
+![Gemini](assets/badges/gemini-labelling-8e75b2.svg)
+[![EmbeddingGemma](assets/badges/model-embeddinggemma-4285f4.svg)](https://huggingface.co/google/embeddinggemma-300M)
+![Gemma 3 4B](assets/badges/model-gemma-3-4b-lora-4285f4.svg)
+[![Source: Research Commons](assets/badges/source-research-commons-be0f34.svg)](https://researchcommons.waikato.ac.nz/)
 
 ## AIRA 2026 poster: Beyond Keywords
 
@@ -97,9 +97,9 @@ All authors are at the School of Computing and Mathematical Sciences, University
 
 | Name | Email | ORCID |
 |---|---|---|
-| Dinushi Jayasinghe | [dinushi.jayasinghe@waikato.ac.nz](mailto:dinushi.jayasinghe@waikato.ac.nz) | [![ORCID](https://img.shields.io/badge/ORCID-0009--0005--6042--9137-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0005-6042-9137) |
-| Paul T. Brown | [paul.brown@waikato.ac.nz](mailto:paul.brown@waikato.ac.nz) | [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--7501--3971-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0001-7501-3971) |
-| Nick Lim | [nick.lim@waikato.ac.nz](mailto:nick.lim@waikato.ac.nz) | [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--4690--5780-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0003-4690-5780) |
+| Dinushi Jayasinghe | [dinushi.jayasinghe@waikato.ac.nz](mailto:dinushi.jayasinghe@waikato.ac.nz) | [![ORCID](assets/badges/orcid-0009-0005-6042-9137-a6ce39.svg)](https://orcid.org/0009-0005-6042-9137) |
+| Paul T. Brown | [paul.brown@waikato.ac.nz](mailto:paul.brown@waikato.ac.nz) | [![ORCID](assets/badges/orcid-0000-0001-7501-3971-a6ce39.svg)](https://orcid.org/0000-0001-7501-3971) |
+| Nick Lim | [nick.lim@waikato.ac.nz](mailto:nick.lim@waikato.ac.nz) | [![ORCID](assets/badges/orcid-0000-0003-4690-5780-a6ce39.svg)](https://orcid.org/0000-0003-4690-5780) |
 
 ## Citation
 
